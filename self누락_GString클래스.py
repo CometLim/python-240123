@@ -1,12 +1,17 @@
-str = "Not Class Member"
+#전역변수
+strName = "Not Class Member"
+
+#클래스 정의
 class GString:
     def __init__(self):
-        self.str = "" 
+        #인스턴스 멤버 변수
+        self.strName = "" 
     def set(self, msg):
-        self.str = msg
+        self.strName = msg
     def print(self):
-        print(str)
+        print(self.strName)
 
+#인스턴스 생성
 g = GString()
 g.set("First Message")
 g.print()
