@@ -30,3 +30,11 @@ print(data)
 #삭제할 문자 지정
 result = data.strip("<> ")
 print(result)
+
+#변환
+result2 = data.replace("spam", "spam egg")
+print(result2)
+lst = result2.split()
+print(lst)
+print("--- 하나의 문자열로 합치기 ---")
+print(":)".join(lst))
